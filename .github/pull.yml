@@ -1,0 +1,9 @@
+version: "1"
+rules:
+  - base: main
+    upstream: willswire:main    # change `wei` to the owner of upstream repo
+    mergeMethod: merge
+    mergeUnstable: false
+    conflictReviewers:      # Optional, on merge conflict assign a reviewer
+      - northportio
+conflictLabel: "merge-conflict"
